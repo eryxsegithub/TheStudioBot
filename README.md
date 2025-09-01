@@ -1,11 +1,10 @@
-# Guardian+ Moderation & Anti-Nuke Bot
+# The Studio's Official Moderation & Anti-Nuke Bot
 
-![Banner](https://i.pinimg.com/originals/5d/2c/44/5d2c44694918947aede42306cb7154d0.gif)
+![Banner]([https://i.pinimg.com/originals/5d/2c/44/5d2c44694918947aede42306cb7154d0.gif](https://cdn.discordapp.com/attachments/1033344194472857660/1411897007056093264/stu_grey_white_black.png?ex=68b6530e&is=68b5018e&hm=0fddb8fdab6d6a24e78e82d8752cefdaa19a5b5866657fdbcba4e9d2a787cfd0&))
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![discord.py](https://img.shields.io/badge/discord.py-2.4%2B-blue.svg)](https://discordpy.readthedocs.io/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Brucewayne34/guardian-plus-bot?style=social)](https://github.com/Brucewayne34/moderation-bot)
 
 ---
 
@@ -55,8 +54,8 @@
 
 ### Installation
 ```bash
-git clone https://github.com/Brucewayne34/guardian-plus-bot.git
-cd guardian-plus-bot
+git clone https://github.com/eryxsegithub/TheStudioBot.git
+cd TheStudioBot
 pip install -r requirements.txt
 ```
 
@@ -84,15 +83,12 @@ python bot.py
 ---
 
 ## 👨‍💻 Developer
-**Bruce Wayne**  
-[![GitHub](https://img.shields.io/badge/GitHub-Brucewayne34-black?logo=github)](https://github.com/Brucewayne34)
-
-![Bruce's GitHub stats](https://github-readme-stats.vercel.app/api?username=Brucewayne34&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Brucewayne34&layout=compact&theme=tokyonight)
+**Eryxse**  
+[![GitHub]([https://img.shields.io/badge/Github-Eryxse?style=for-the-badge&logoColor=black&label=Eryxse&labelColor=black&color=black](https://github.com/eryxsegithub/TheStudioBot)
 
 ---
 
 ## 📜 License
 MIT License
 
-> Developed with ❤️ by Bruce Wayne
+> Developed with my dih by Eryxse
