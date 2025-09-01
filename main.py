@@ -84,10 +84,19 @@ except Exception as e:
     banner(f"{Fore.RED if COLOR_ENABLED else ''}[The Studio] Failed to parse config.json: {e}{Style.RESET_ALL if COLOR_ENABLED else ''}")
     sys.exit(1)
 
-TOKEN = os.getenv("DISCORD_TOKEN") or CONFIG.get("token")
+# ---------------- Token ----------------
+# Always prefer environment variables so we don't leak tokens in git
+TOKEN = (
+    os.getenv("DISCORD_TOKEN")      # Railway / most setups
+    or os.getenv("TOKEN")           # fallback, in case you named it TOKEN
+    or CONFIG.get("token")          # last resort, only for local dev
+)
+
 if not TOKEN or TOKEN.strip() in ("", "YOUR_BOT_TOKEN_HERE"):
-    banner(f"{Fore.RED if COLOR_ENABLED else ''}[The Studio] No valid token in config.json ('token') or DISCORD_TOKEN env var.{Style.RESET_ALL if COLOR_ENABLED else ''}")
+    banner(f"{Fore.RED if COLOR_ENABLED else ''}[The Studio] No valid token. "
+           f"Set DISCORD_TOKEN in Railway Variables.{Style.RESET_ALL if COLOR_ENABLED else ''}")
     sys.exit(1)
+
 
 DEFAULT_PREFIX = CONFIG.get("default_prefix", "-")
 OWNER_IDS = set(CONFIG.get("owner_ids", []))
