@@ -1,6 +1,6 @@
 # The Studio's Official Moderation & Anti-Nuke Bot
 
-![Banner]([https://i.pinimg.com/originals/5d/2c/44/5d2c44694918947aede42306cb7154d0.gif](https://cdn.discordapp.com/attachments/1033344194472857660/1411897007056093264/stu_grey_white_black.png?ex=68b6530e&is=68b5018e&hm=0fddb8fdab6d6a24e78e82d8752cefdaa19a5b5866657fdbcba4e9d2a787cfd0&))
+![Banner]([https://cdn.discordapp.com/attachments/1033344194472857660/1411897007056093264/stu_grey_white_black.png?ex=68b6530e&is=68b5018e&hm=0fddb8fdab6d6a24e78e82d8752cefdaa19a5b5866657fdbcba4e9d2a787cfd0&](https://cdn.discordapp.com/attachments/1033344194472857660/1411897007056093264/stu_grey_white_black.png?ex=68b6530e&is=68b5018e&hm=0fddb8fdab6d6a24e78e82d8752cefdaa19a5b5866657fdbcba4e9d2a787cfd0&))
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![discord.py](https://img.shields.io/badge/discord.py-2.4%2B-blue.svg)](https://discordpy.readthedocs.io/)
