@@ -1,0 +1,28 @@
+{
+  "token": "",
+  "default_prefix": "-",
+  "owner_ids": [898268727513071647],
+  "database": {
+    "mode": "mongo",
+    "json_path": "data.json",
+    "mongo_uri": "",
+    "mongo_db": "modbot"
+  },
+  "embed": {
+    "color": 10181046,
+    "footer": "The Studio • Moderation & Security"
+  },
+  "slash": {
+    "guild_sync_ids": [1033340848861106276]
+  },
+  "antinuke_defaults": {
+    "timeout_seconds": 60,
+    "channel_delete_threshold": 3,
+    "channel_delete_window": 15,
+    "spam_threshold": 7,
+    "spam_window": 5,
+    "block_invites": true,
+    "block_nsfw_in_sfw_channels": true,
+    "auto_revoke_dangerous_perms": true
+  }
+}
