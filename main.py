@@ -85,16 +85,22 @@ except Exception as e:
     sys.exit(1)
 
 # ---------------- Token ----------------
-# Always prefer environment variables so we don't leak tokens in git
-TOKEN = (
-    os.getenv("DISCORD_TOKEN")      # Railway / most setups
-    or os.getenv("TOKEN")           # fallback, in case you named it TOKEN
-    or CONFIG.get("token")          # last resort, only for local dev
+print("DEBUG: Checking environment for DISCORD_TOKEN / TOKEN")
+print("DEBUG: ENV VARS KEYS =", list(os.environ.keys()))
+
+raw_token = (
+    os.getenv("DISCORD_TOKEN")
+    or os.getenv("TOKEN")
+    or CONFIG.get("token")
 )
 
-if not TOKEN or TOKEN.strip() in ("", "YOUR_BOT_TOKEN_HERE"):
+TOKEN = raw_token.strip() if raw_token else None
+
+print("DEBUG: Loaded TOKEN =", repr(TOKEN))
+
+if not TOKEN or TOKEN in ("", "YOUR_BOT_TOKEN_HERE"):
     banner(f"{Fore.RED if COLOR_ENABLED else ''}[The Studio] No valid token. "
-           f"Set DISCORD_TOKEN in Railway Variables.{Style.RESET_ALL if COLOR_ENABLED else ''}")
+           f"Check Railway Variables (set DISCORD_TOKEN).{Style.RESET_ALL if COLOR_ENABLED else ''}")
     sys.exit(1)
 
 
